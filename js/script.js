@@ -25,6 +25,6 @@ if (window.matchMedia("(min-width:576px)").matches) {
   });
 } else {
   $(specialCarousel).addClass("slide");
-});
+}
 
 
