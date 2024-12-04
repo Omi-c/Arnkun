@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnkun | Impresiones 3D</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel = "stylesheet" href = "bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel = "stylesheet" href = "css/main.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class = "navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class = "container">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <img src = "images/logo.png" alt = "site icon">
+                <span class = "text-uppercase ms-2">Arnkun</span>
+            </a>
+
+            <button class = "navbar-toggler border-0" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navMenu">
+                <span class = "navbar-toggler-icon"></span>
+            </button>
+
+            <div class = "collapse navbar-collapse order-lg-1" id = "navMenu">
+                <ul class = "navbar-nav mx-auto text-center">
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#header">Inicio</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#special">Nuevo</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2 border-0">
+                        <a class = "nav-link text-uppercase text-dark" href = "#offers">Pedido</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#about">Nosotros</a>
+                    </li>
+                    <li class = "nav-item px-2 py-2">
+                        <a class = "nav-link text-uppercase text-dark" href = "#services">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- header -->
+    <header id="header" >
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../images/banner1.png" alt="Impresión 3D en Resina">
+                    <div class="carousel-caption">
+                        <h2 class="text-white">Impresión 3D</h2>
+                        <h1 class="text-uppercase py-2 fw-bold text-white">En resina</h1>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/banner2.png" alt="Impresión 3D en Filamento">
+                    <div class="carousel-caption">
+                        <h2 class="text-white">Impresión 3D</h2>
+                        <h1 class="text-uppercase py-2 fw-bold text-white">En Filamento</h1>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../images/banner3.jpg" alt="Grabadora Láser">
+                    <div class="carousel-caption">
+                        <h2 class="text-white">Cortadora y</h2>
+                        <h1 class="text-uppercase py-2 fw-bold text-white">grabadora láser</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles del Carrusel -->
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    
+   <!-- Nuevo  -->
+   <section id="special" class="py-5">
+    <div class="title text-center py-4">
+        <h2 class="position-relative d-inline-block">Últimos productos</h2>
+    </div>
+
+    <div class="container bg-body-tertiary py-3">
+        <div id="productCarousel" class="carousel">
+            <div class="carousel-inner">
+                <!-- Producto 1 -->
+                <div class="carousel-item active">
+                    <div class="card">
+                        <img src="./images/productos/bayonetta_guns.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Armas de Bayonetta</h5>
+                            <p class="text-secondary">$50.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 2 -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./images/productos/pokedeck.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Estuche para Juegos de Nintendo Switch</h5>
+                            <p class="text-secondary">$15.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 3 -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./images/productos/headset_supp.png" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Soporte para Headset de Dragón</h5>
+                            <p class="text-secondary">$40.00</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div class="carousel-item">
+                    <div class="card">
+                        <img src="./images/productos/bulbasur.jpg" class="card-img-top">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Maceta de Bulbasaur, Pokémon</h5>
+                            <p class="text-secondary">$12.00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+    
+    </section>
+    <!-- Nuevo end -->
+
+    <!-- pedido -->
+    <section id = "offers" class = "py-5">
+        <div class = "container">
+            <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
+                <div class = "offers-content">
+                    <span class = "text-white">¿Quieres hacer un pedido personalizado?</span>
+                    <h2 class = "mt-2 mb-4 text-white">¡Haz click aquí!</h2>
+                    <a href = "pedido.html" class = "btn">Hacer pedido</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- pedido end -->
+    
+    <!-- nosotros -->
+    <section id = "about" class = "py-5">
+        <div class = "container pt-4">
+            <div class = "row gy-lg-5 align-items-center">
+                <div class = "col-lg-6 order-lg-1 text-center text-lg-start">
+                    <div class = "title pt-3 pb-4">
+                        <h2 class = "position-relative d-inline-block ms-4">Sobre nosotros</h2>
+                    </div>
+                    <p class = "lead text-muted">
+                        Nuestro proyecto comenzó como una pequeña idea apasionada por la impresión 3D 
+                        y el corte láser. Lo que fue un pasatiempo ha crecido, y hoy somos un taller 
+                        dedicado a ofrecer soluciones de impresión en resina, filamento y corte y grabadora láser 
+                        de alta calidad para ayudar a emprendedores y empresas a llevar sus ideas al siguiente nivel.
+                    </p>
+                </div>
+                <div class = "col-lg-6 order-lg-0">
+                    <img src = "images/about_us.jpg" alt = "" class = "img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- nosotros end-->
+
+    <!-- servicios -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="title text-center pb-5">
+                <h2 class="position-relative d-inline-block">Nuestros Servicios</h2>
+            </div>
+
+            <div class="row g-3 text-primary text-center">
+                <!-- Servicio de impresión 3D en resina -->
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/banner1.png" alt="Impresión 3D en Resina" class="card-img-top">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Impresión 3D en Resina</h4>
+                        <p class="card-text mt-3 text-muted">Ofrecemos impresión 3D en resina de alta precisión, ideal para piezas con detalles finos y acabados profesionales. Perfecto para maquetas, prototipos y modelos personalizados.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio de impresión 3D en filamento -->
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/banner2.png" alt="Impresión 3D en Filamento" class="card-img-top">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Impresión 3D en Filamento</h4>
+                        <p class="card-text mt-3 text-muted">Nuestra impresión 3D en filamento ofrece una solución versátil para piezas más grandes y resistentes. Ideal para modelos funcionales, componentes mecánicos y piezas a gran escala.</p>
+                    </div>
+                </div>
+
+                <!-- Servicio de grabado y corte láser -->
+                <div class="card border-0 col-md-6 col-lg-4 bg-transparent my-3">
+                    <img src="../images/banner3.jpg" alt="Grabado y Corte Láser" class="card-img-top">
+                    <div class="card-body px-0">
+                        <h4 class="card-title">Grabado y Corte Láser</h4>
+                        <p class="card-text mt-3 text-muted">Nuestro servicio de grabado y corte láser permite realizar diseños precisos en una variedad de materiales. Ideal para personalización de productos, decoración y prototipado rápido.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- footer -->
+    <footer class = "bg-dark pt-5">
+        <div class = "container">
+            <div class = "row text-white g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none brand text-white" href = "index.html">Arnkun</a>
+                    <p class = "text-white text-muted mt-3">
+                        Somos un emprendimiento especializado en impresión en resina, filamento, cortes y grabados precisos con láser con la más alta calidad.
+                    </p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Información</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light">
+                            Valencia, Edo. Carabobo
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light">
+                            arnkun@gmail.com
+                        </span>
+                    </div>
+                    
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light mb-3">Redes Sociales</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "https://www.facebook.com/profile.php?id=61557683096080" class = "text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.instagram.com/arn_kun/" class = "text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.tiktok.com/@arn_kun" class = "text-white text-decoration-none text-muted fs-4 me-4" target="_blank">
+                                    <i class = "fab fa-tiktok"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://wa.link/2l1z41" class="text-white text-decoration-none text-muted fs-4 whatsapp-icon" target="_blank">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+  
+    <!-- jquery -->
+    <script src = "js/jquery-3.6.0.js"></script>
+    <!-- bootstrap js -->
+    <script src = "bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>

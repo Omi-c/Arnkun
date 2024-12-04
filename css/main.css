@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --lg-font: "Montserrat", sans-serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #801637;
+}
+body{
+    font-family: var(--sm-font);
+}
+
+/* button */
+.bg-primary{
+    background-color: var(--pink)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+
+/* text color */
+.text-primary{
+    color: var(--pink)!important;
+}
+
+/* navbar */
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--lg-font);
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: var(--pink)!important;
+}
+
+/* header */
+#header {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.carousel-caption h1 {
+    font-size: 4em; 
+    font-family: var(--lg-font);
+    color: #fff;
+    margin-bottom: 10px; 
+}
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 0; 
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh; 
+}
+
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%; 
+    transform: translateY(-50%);
+    z-index: 11;
+    color: #fff;
+    width: 5%; 
+}
+
+
+/* title */
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+
+
+/* Nuevo */
+#special .card {
+    width: 21rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+  
+#special .card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+#special .carousel img {
+    height: 20rem; 
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+
+#special .card-title,
+#special .card-text {
+  margin: 0.5rem 0;
+}
+
+@media screen and (min-width: 576px) {
+    #special .carousel-inner {
+      display: flex;
+      width: 90%;
+      margin-inline: auto;
+      padding: 1em 0;
+      overflow: hidden;
+    }
+    #special .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 2);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    #special .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0 calc(100% / 3);
+    }
+  }
+  #special .carousel .card {
+    margin: 0 0.5em;
+    border: 0;
+  }
+  
+  #special .carousel-control-prev,
+  #special .carousel-control-next {
+    width: 3rem;
+    height: 3rem;
+    background-color: grey;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+
+
+
+/* pedido */
+#offers{
+    background: url(../images/pedido.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 2rem;
+}
+.offers-content h2{
+    font-size: 3rem;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+}
+
+
+/* nosotros */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* servicios */
+#services .card img {
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+/*Modal de carga al hacer el pedido*/
+.loading-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+ 
+/* footer */
+footer {
+    padding: 2rem 0; 
+}
+
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--pink) !important;
+}
+
+footer .row {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+footer .col-md-6.col-lg-3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 150px;
+    margin-bottom: 1rem; 
+}
+
+footer .col-md-6.col-lg-3 h5, 
+footer .col-md-6.col-lg-3 .brand {
+    margin: 0 0 0.5rem; /* Simplified margin */
+}
+
+
+footer .col-md-6.col-lg-3 ul li {
+    margin: 0 0.5rem;
+}
+
+footer .whatsapp-icon {
+    margin-right: 0;
+}
+
+
+@media (max-width: 992px) {
+    .carousel-caption h1 {
+        font-size: 2rem; 
+        margin-bottom: 5px; 
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.5rem;
+    }
+
+    .carousel-item img {
+        height: 80vh;
+    }
+
+    .offers-content span {
+        font-size: 1.75rem; 
+    }
+
+    .offers-content h2 {
+        font-size: 2.5rem; 
+    }
+
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer .col-md-6.col-lg-3 {
+        width: 100%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h1 {
+        font-size: 2rem; 
+        margin-bottom: 2px; 
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-item img {
+        height: 70vh; 
+    }
+
+    .offers-content span {
+        font-size: 1.2rem; 
+    }
+
+    .offers-content h2 {
+        font-size: 2rem; 
+    }
+
+    .offers-content .btn {
+        font-size: 0.875rem; 
+    }
+
+    #about .lead {
+        margin-left: 1rem; /* Ajusta según necesites */
+        margin-right: 1rem; /* Ajusta según necesites */
+    }
+}
+
